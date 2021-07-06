@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+  <!--Arguments Declaration-->
+  <arg name="model" default="$(find differential_drive_robot_description)/urdf/differential_drive_robot.xacro"/>
+  <arg name="rvizconfig" default="$(find differential_drive_robot_description)/rviz/urdf.rviz" />
+  
+  <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+
+  <!-- Publish joint values -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="False"/>
+  </node>
+
+  <!-- Combine joint values -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+  <!-- Rviz Visualization   -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+</launch>

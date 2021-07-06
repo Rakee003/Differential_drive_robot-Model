@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!--Xacro variable declaration-->
+
+
+<!--Dimentions-->
+
+  <!--Chasis_cylinder-->
+  <xacro:property name="chasis_cylinder_radius" value="0.2" />
+  <xacro:property name="chasis_cylinder_height" value="0.05" />
+
+  <!--Chasis_caster-->
+  <xacro:property name="chasis_caster_radius" value="0.05" />
+
+  <!--Wheel_cylinder-->
+  <xacro:property name="wheel_cylinder_radius" value="0.1" />
+  <xacro:property name="wheel_cylinder_height" value="0.05" />
+
+
+<!--Positions-->
+  <!--Chasis_cylinder-->
+  <xacro:property name="chasis_cylinder_x" value="0" />
+  <xacro:property name="chasis_cylinder_y" value="0" />
+  <xacro:property name="chasis_cylinder_z" value="0.1" />
+
+  <xacro:property name="chasis_cylinder_r" value="0" />
+  <xacro:property name="chasis_cylinder_p" value="0" />
+  <xacro:property name="chasis_cylinder_ya" value="0" />
+
+
+  <!--Chasis_caster-->
+  <xacro:property name="chasis_caster_x" value="-0.15" />
+  <xacro:property name="chasis_caster_y" value="0" />
+  <xacro:property name="chasis_caster_z" value="-0.05" />
+
+  <xacro:property name="chasis_caster_r" value="0" />
+  <xacro:property name="chasis_caster_p" value="0" />
+  <xacro:property name="chasis_caster_ya" value="0" />
+
+
+  <xacro:property name="chasis_caster2_x" value="0.15" />
+  <xacro:property name="chasis_caster2_y" value="0" />
+  <xacro:property name="chasis_caster2_z" value="-0.05" />
+
+  <xacro:property name="chasis_caster2_r" value="0" />
+  <xacro:property name="chasis_caster2_p" value="0" />
+  <xacro:property name="chasis_caster2_ya" value="0" />
+
+  <!--Wheel-->
+  <xacro:property name="wheel_x" value="0" />
+  <xacro:property name="wheel_y" value="0" />
+  <xacro:property name="wheel_z" value="0" />
+
+  <xacro:property name="wheel_r" value="0" />
+  <xacro:property name="wheel_p" value="1.5707" />
+  <xacro:property name="wheel_ya" value="1.5707" />
+
+
+<!--Joint variables-->
+
+  <xacro:property name="right_wheel_x" value="0.0" />
+  <xacro:property name="right_wheel_y" value="0.20" />
+  <xacro:property name="right_wheel_z" value="0" />
+
+  <xacro:property name="left_wheel_x" value="0" />
+  <xacro:property name="left_wheel_y" value="-0.20" />
+  <xacro:property name="left_wheel_z" value="0" />
+
+
+</robot>
+
